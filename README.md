@@ -1,5 +1,6 @@
 ## 常见问题指南
 - [ScrollView无法滚动](#ScrollView无法滚动)
+- [多平台同时调试代码dist目录分割](#多平台同时调试代码dist目录分割)
 - [三端统一RN坑盘点](#三端统一RN坑盘点)
 - [RNstyle注意点](#RNstyle注意点)
 
@@ -31,6 +32,14 @@ page {
 <View className="scroll-main">
     <ScrollView className="scroll"></ScrollView>
 </View>
+```
+
+## 多平台同时调试代码dist目录分割
+
+> config/index.js ,js代码可以自己写相应的代码放到想要的目录
+
+```
+outputRoot: 'dist/' + process.env.TARO_ENV,
 ```
 
 ## 三端统一RN坑盘点
