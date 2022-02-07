@@ -60,7 +60,7 @@ page {
 
 > RN的style某些数值不能写单位px, 如 <View style={{ width: "20px" }}/> RN不支持，如果不写px H5和小程序就不行了，建议使用样式，如果非常情况下自己做个平台判断封装方法
 
-```
+```javascript
 // 比较戳的一个方式，哈哈
 export const stylePX = (px: number) => {
     if (process.env.TARO_ENV === 'rn') {
