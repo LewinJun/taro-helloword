@@ -70,7 +70,7 @@ export const stylePX = (px: number) => {
 }
 ```
 
-> RN不支持border: 1px red solid;  只能border-color: red;这样，因为RN StyleSheet里面不支持，taro仅仅只是把-改成驼峰命名，taro RN推出比较晚，需要慢慢完善，比如background-image, 背景渐变都不支持(可以使用第三方RN组件走原生的方式实现react-native-linear-gradient)
+> RN不支持border: 1px red solid;  只能border-color: red;这样，因为RN [StyleSheet](https://reactnative.dev/docs/0.66/stylesheet)里面不支持，taro仅仅只是把-改成驼峰命名，taro RN推出比较晚，需要慢慢完善，比如background-image, 背景渐变都不支持(可以使用第三方RN组件走原生的方式实现react-native-linear-gradient)
 
 
 
